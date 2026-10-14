@@ -12,10 +12,9 @@ class Program
          *  On lui permet de le faire lorsqu'il entre "y". Dans les autres cas, on termine le programme
          */
         string answer2;
+        int answer;
         do
         {
-            int answer;
-
             Console.WriteLine("choisissez un nombre entier");
             answer = Convert.ToInt32(Console.ReadLine());
             if (answer % 2 == 0)
@@ -26,7 +25,7 @@ class Program
             {
                 Console.WriteLine("ton nombre est impair");
             }
-            Console.WriteLine("voulez vous en choisir un autre ? (y/n) ");
+            Console.WriteLine("voulez vous en choisir un autre ? \n (y/n)");
             answer2 = Console.ReadLine();
         } while (answer2 != "n");
        
